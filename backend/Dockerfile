@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /app
 
 # Copy the backend directory into the container at /app
-COPY ./backend /app
+COPY . /app
 
 # Install dependencies using pnpm
 RUN npm install -g pnpm
