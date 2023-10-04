@@ -30,6 +30,25 @@ Ensure you have the following prerequisites installed:
 - Redis Server
 - Prisma CLI (`npm install -g prisma`)
 
+## Preview
+
+### **Register Demo**
+
+![register.gif](./public/register.gif)
+
+### **Login Demo**
+
+![login.gif](./public/login.gif)
+
+### **Chatroom Demo**
+
+![chatroom.gif](./public/chatroom.gif)
+
+### **Update Profile Demo**
+
+![update-profile.gif](./public/updateProfile.gif)
+
+
 ## Getting Started
 
 1. **Clone the Repository:**
