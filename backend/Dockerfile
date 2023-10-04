@@ -1,18 +1,16 @@
-# Use a base image with Node.js
 FROM node:14
 
-# Set the working directory to /app
 WORKDIR /app
 
-# Copy the backend directory into the container at /app
-COPY . /app
+COPY package.json ./
 
-# Install dependencies using pnpm
-RUN npm install -g pnpm
+RUN npm i -g pnpm
+RUN pnpm fetch
 RUN pnpm install
 
-# Expose the port the app runs on
+COPY . ./
+RUN pnpm run build
+
 EXPOSE 3000
 
-# Command to start the application
-CMD ["pnpm", "start"]
+CMD ["pnpm", "start:prod"]
